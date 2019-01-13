@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello World</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+<style>
+
+
+body {margin:2%;}
+
+.header, .content{
+    width:100%;
+    text-align: center;
+}
+.content{
+    text-align: left;
+}
+.icon-bar {
+  width:100%;
+  background-color:#000;
+  overflow: auto;
+  margin-left:5px;
+}
+
+.icon-bar a {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: red;
+}
+
+.active {
+  background-color: blue;
+}
+img {
+  float: right;
+  border: 1px dotted black;
+  margin: 0px 0px 15px 20px;
+}
+</style>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Hello Offline World !</h1>
+    </div>
+    <div class="icon-bar">
+            <a class="active" href="index.html" title="Home"><i class="fas fa-home"></i></a> 
+            <a href="help.html" title="Help"><i class="fas fa-question"></i></a> 
+    </div>
+    <div class="content">
+        <h2>The Day the Earth Smiled</h2>
+        <p>
+            On July 19, 2013, in an event celebrated the world over, NASA's Cassini spacecraft slipped into Saturn's 
+            shadow and turned to image the planet, seven of its moons, its inner rings -- and, in the background, 
+            our home planet, Earth.
+        </p>   
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/The_Day_the_Earth_Smiled_-_PIA17172.jpg" width="300px"/>
+        <p>   
+        With the sun's powerful and potentially damaging rays eclipsed by Saturn itself, Cassini's onboard cameras
+        were able to take advantage of this unique viewing geometry. They acquired a panoramic mosaic of the Saturn 
+        system that allows scientists to see details in the rings and throughout the system as they are backlit by the
+        sun. This mosaic is special as it marks the third time our home planet was imaged from the outer solar system; 
+        the second time it was imaged by Cassini from Saturn's orbit; and the first time ever that inhabitants of Earth
+         were made aware in advance that their photo would be taken from such a great distance.
+       </p>
+       <p>
+        With both Cassini's wide-angle and narrow-angle cameras aimed at Saturn, Cassini was able to capture 323 images 
+        in just over four hours. This final mosaic uses 141 of those wide-angle images. Images taken using the red, green
+         and blue spectral filters of the wide-angle camera were combined and mosaicked together to create this natural-color 
+         view. A brightened version with contrast and color enhanced (Figure 1), a version with just the planets annotated 
+         (Figure 2), and an annotated version (Figure 3) are shown above.This image spans about 404,880 miles (651,591 kilometers) across.
+       </p>    
+    
+        <p> 
+        The outermost ring shown here is Saturn's E ring, the core of which is situated about 149,000 miles (240,000 kilometers)
+         from Saturn. The geysers erupting from the south polar terrain of the moon Enceladus supply the fine icy particles 
+         that comprise the E ring; diffraction by sunlight gives the ring its blue color. Enceladus (313 miles, or 
+         504 kilometers, across) and the extended plume formed by its jets are visible, embedded in the E ring on the left 
+         side of the mosaic.  
+        </p>
+                 
+    </div>    
+</body>
+<script src="node_modules/progressifyjs/dist/progressify-pwa.js"></script>
+<script>
+    
+    window.addEventListener('load', (event) => {
+        progressify.pwa.init();
+    });
+
+</script>    
+
+
+</html>
