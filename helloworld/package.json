@@ -11,5 +11,8 @@
   "license": "MIT",
   "devDependencies": {
     "express": "^4.16.4"
+  },
+  "dependencies": {
+    "progressifyjs": "^0.1.0"
   }
 }
